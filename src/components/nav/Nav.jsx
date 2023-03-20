@@ -12,7 +12,7 @@ const Nav = () => {
   const [isNavShowing, setIsNavShowing] = useState(false);
   return (
     <nav>
-      <div className='container nav__container'>
+      <div className='nav__container'>
         <Link
           to='/'
           className='logo'
