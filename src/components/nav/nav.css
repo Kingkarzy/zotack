@@ -172,7 +172,7 @@
     /* position: absolute; */
     padding: 1rem;
     position: fixed;
-    top: 1rem; /* adjust as needed */
+    top: 10px; /* adjust as needed */
     right: -8rem; /* adjust as needed */
     /* transform: translate(-100%, 60%); */
     font-size: 1.8rem;
