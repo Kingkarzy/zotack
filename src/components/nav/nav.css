@@ -41,13 +41,12 @@ nav {
 }
 
 .nav__links a {
-  /* font-size: 0.9rem; */
   transition: var(--transition);
 }
 
 .nav__links a:hover {
   color: var(--color-secondary);
-  font-size: 1.1rem;
+  /* font-size: 1.1rem; */
 }
 
 .active-nav {

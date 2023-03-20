@@ -3,14 +3,19 @@ import './contact.css';
 import { MdEmail } from 'react-icons/md';
 import { FaFacebookMessenger } from 'react-icons/fa';
 import { IoLogoWhatsapp } from 'react-icons/io';
-// import emailjs from 'emailjs-com'
+import emailjs from 'emailjs-com';
 
 const Contact = () => {
   const form = useRef();
 
   const sendEmail = (e) => {
     e.preventDefault();
-    // emailjs.sendForm('service_9jmclzv', 'template_xfs2zhb', form.current, 'LRqFyM9QJ4sLK7vfp')
+    emailjs.sendForm(
+      'service_6gqql3k',
+      'template_3v4y30a',
+      form.current,
+      'wXb5XShz6Pb0fTC2q'
+    );
     e.target.reset();
   };
 
@@ -24,9 +29,9 @@ const Contact = () => {
           <article className='contact__option'>
             <MdEmail className='contact__option-icon' />
             <h4>Email</h4>
-            <h5>cjahanwa@gmail.com</h5>
+            <h5>contact@zotack.com</h5>
             <a
-              href='mailto:cjahanwa@gmail.com'
+              href='mailto:contact@zotack.com'
               target='_blank'
               rel='noopener noreferrer'
             >
@@ -36,9 +41,9 @@ const Contact = () => {
           <article className='contact__option'>
             <FaFacebookMessenger className='contact__option-icon' />
             <h4>Facebook</h4>
-            <h5>Chijioke Ahanwa</h5>
+            <h5>Zotack</h5>
             <a
-              href='https://m.me/chijioke.ahanwa'
+              href='https://m.me/zotack0'
               target='_blank'
               rel='noopener noreferrer'
             >
@@ -49,8 +54,9 @@ const Contact = () => {
             <IoLogoWhatsapp className='contact__option-icon' />
             <h4>WhatsApp</h4>
             <h5>+234 811 831 8270</h5>
+            <h5>+234 903 698 0222</h5>
             <a
-              href='https://api.whatsapp.com/send?phone=+2348118318270'
+              href='https://api.whatsapp.com/send?phone=+2349036980222'
               target='_blank'
               rel='noopener noreferrer'
             >
