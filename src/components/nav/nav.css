@@ -71,12 +71,15 @@ nav {
 /* ============= MEDIA QUERIES (TABLETS) ============== */
 @media screen and (max-width: 1024px) {
   .nav__toggle-btn {
-    display: inline-block;
+    display: block;
     background: transparent;
     font-size: 1.8rem;
     color: var(--color-white);
     cursor: pointer;
-    margin-left: 15.5rem;
+    /* margin-left: 15.5rem; */
+    position: absolute;
+    /* top: 0; */
+    right: 0;
   }
 
   .nav__links {
