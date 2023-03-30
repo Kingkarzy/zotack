@@ -53,8 +53,7 @@ const Contact = () => {
           <article className='contact__option'>
             <IoLogoWhatsapp className='contact__option-icon' />
             <h4>WhatsApp</h4>
-            <h5>+234 811 831 8270</h5>
-            <h5>+234 903 698 0222</h5>
+            <h5>+234 813 643 4416</h5>
             <a
               href='https://api.whatsapp.com/send?phone=+2349036980222'
               target='_blank'
