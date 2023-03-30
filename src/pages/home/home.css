@@ -54,7 +54,6 @@
   float: right;
   margin-top: 3rem;
 }
-
 /* =========== MEDIA QUERIES (TABLET) ========== */
 @media screen and (max-width: 1024px) {
   .main__header {
@@ -74,11 +73,12 @@
   .main__header-container {
     width: var(--container-width-sm);
     display: block;
-    padding: 2rem 1rem;
+    padding: 1rem 1rem;
     margin-top: 3rem;
   }
 
   .main__header-right {
-    margin-top: 0;
+    margin-top: -4rem;
+    margin-bottom: 0rem;
   }
 }

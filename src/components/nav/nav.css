@@ -11,6 +11,7 @@
   width: 100%;
   top: 0;
   z-index: 99;
+  padding-left: 3rem;
 }
 
 .navbar-container {
@@ -23,6 +24,7 @@
 
 .navbar-logo {
   cursor: pointer;
+
 }
 .navbar-logo h3 {
   width: 110px;
@@ -127,7 +129,6 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-
     position: absolute;
     top: 80px;
     left: -100%;
@@ -137,7 +138,7 @@
   }
 
   .nav-menu.active {
-    background: var(--color-primary);
+    background: var(--color-bg);
     left: 0;
     opacity: 1;
     transition: all 0.5s ease;
@@ -173,7 +174,7 @@
     padding: 1rem;
     position: fixed;
     top: 10px; /* adjust as needed */
-    right: -8rem; /* adjust as needed */
+    right: 0rem; /* adjust as needed */
     /* transform: translate(-100%, 60%); */
     font-size: 1.8rem;
     cursor: pointer;
@@ -203,5 +204,12 @@
     background: #fff;
     color: var(--color-gray-500);
     transition: 250ms;
+  }
+}
+
+/* =========== MEDIA QUERIES (PHONES) ========== */
+@media screen and (max-width: 600px) {
+  .navbar {
+    background: hsl( 240 , 48%, 15%);
   }
 }

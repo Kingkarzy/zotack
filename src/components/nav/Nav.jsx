@@ -2,6 +2,8 @@ import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 // import { Button } from './Button';
 import { BiMenu } from 'react-icons/bi';
+import MenuIcon from '@mui/icons-material/Menu';
+import ClearIcon from '@mui/icons-material/Clear';
 import { IoMdClose } from 'react-icons/io';
 import './nav.css';
 
@@ -40,9 +42,9 @@ function Nav() {
           onClick={handleClick}
         >
           {click ? (
-            <IoMdClose style={{ color: 'white' }} />
+            <ClearIcon style={{ color: 'white' }} />
           ) : (
-            <BiMenu style={{ color: 'white' }} />
+            <MenuIcon style={{ color: 'white' }} />
           )}
         </div>
 

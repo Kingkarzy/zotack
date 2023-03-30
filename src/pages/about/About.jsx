@@ -35,39 +35,42 @@ const about = () => {
             </article>
           </div>
           <br />
-          <span>
-            {' '}
-            We specialize in creating wesites for individuals and
-            small businesses.
+          <div className='writeUp'>
             <span>
               {' '}
-              Why settle for special offers and templates when we
-              provides custom designs.{' '}
+              We specialize in creating wesites for individuals and
+              small businesses.
+              <span>
+                {' '}
+                Why settle for special offers and templates when we
+                provides custom designs.{' '}
+              </span>
+              <span>
+                {' '}
+                We are passionate about building things for the web.{' '}
+              </span>
+              <span>
+                {' '}
+                We have a zeal for coding by studying the IT field.
+              </span>
             </span>
-            <span>
-              {' '}
-              We are passionate about building things for the web.{' '}
-            </span>
-            <span>
-              {' '}
-              We have a zeal for coding by studying the IT field.
-            </span>
-          </span>
+          
 
-          <h4>
-            We <BsHeartFill id='heart__icon' /> working with small
-            businesses
-          </h4>
-          <span>
-            We offer a great service & opportunity to startups. We are
-            always looking to provide the best services possible as
-            customers experience is our responsibility.
-          </span>
-          <span>
-            {' '}
-            Take a look at our portfolio below. If you think we'd
-            serve you well{' '}
-          </span>
+            <h4>
+              We <BsHeartFill id='heart__icon' /> working with small
+              businesses
+            </h4>
+            <span>
+              We offer a great service & opportunity to startups. We are
+              always looking to provide the best services possible as
+              customers experience is our responsibility.
+            </span>
+            <span>
+              {' '}
+              Take a look at our portfolio below. If you think we'd
+              serve you well{' '}
+            </span>
+          </div>
           <br />
           <br />
           <Link
