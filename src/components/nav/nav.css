@@ -3,7 +3,7 @@
   height: auto;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   font-size: 0.9rem;
   font-weight: 500;
@@ -16,7 +16,7 @@
 
 .navbar-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   height: 80px;
   max-width: 1500px;
@@ -69,8 +69,8 @@
 }
 
 .nav-links.active {
-  border-bottom: 4px solid #f0dc6b;
-  color: #f0dc6b;
+  border-bottom: 4px solid var(--color-secondary);
+  color: var(--color-secondary);
 }
 
 .fa-bars {
