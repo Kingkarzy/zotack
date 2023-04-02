@@ -32,7 +32,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 1.9rem;
+  font-size: 2rem;
+  -ms-transform: rotate(-5deg); /* IE 9 */
+  transform: rotate(-5deg);
+  -ms-transform: skewY(-5deg); /* IE 9 */
+  transform: skewY(-5deg);
+  text-shadow: 3px 3px #735187;
 }
 .fa-typo3 {
   margin-left: 0.2rem;
