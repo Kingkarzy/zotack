@@ -4,7 +4,12 @@ import Header from '../../components/header/MainHeader';
 const Home = () => {
   return (
     <>
-      <Header />
+      <div className="body">
+        <Header />
+        <div className="footer">
+            copyright &copy; 2023
+        </div>
+      </div>
     </>
   );
 };

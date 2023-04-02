@@ -10,8 +10,8 @@ const Header = () => {
     <header className='main__header'>
       <div className="container main__header-container">
         <div className="main__header-left">
-          <h4>Hey! We are TECH BROS</h4>
-          <h1>Build Your Website With Us</h1>
+          <h4>Hey! <span className="techbros">We are the TECH BROS</span></h4>
+          <h1>Build Your Website With Us!</h1>
           <p>We specialize in creating fully functional wesites for individuals and small businesses.</p>
           <Link to="/contact" className='btn btn-sm header__btn'>Let's Talk</Link>
         </div>
