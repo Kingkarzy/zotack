@@ -29,10 +29,11 @@
   width: 110px;
   height: 70px;
   margin-top: 5px;
+  margin-left: 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 2rem;
+  font-size: 2.4rem;
   -ms-transform: rotate(-5deg); /* IE 9 */
   transform: rotate(-5deg);
   -ms-transform: skewY(-5deg); /* IE 9 */
@@ -129,6 +130,10 @@
   .NavbarItems {
     position: relative;
   }
+  .navbar {
+    background: hsl(240, 48%, 15%);
+    /* margin: 0rem 1rem ; */
+  }
 
   .nav-menu {
     display: flex;
@@ -170,6 +175,7 @@
     width: 30%;
     height: 20px;
     transform: translate(10%, 0%);
+    margin-left: 1rem;
   }
 
   .menu-icon {
@@ -212,7 +218,7 @@
   }
 
   .navbar-logo h3 {
-    font-size: 1.8rem;
+    font-size: 2.4rem;
   }
 }
 
@@ -223,11 +229,7 @@
     /* margin: 0rem 1rem ; */
   }
   .navbar-logo h3 {
-    font-size: 2.1rem;
+    font-size: 2.2rem;
     margin-left: 1rem;
-  }
-  .menuClose
-  .menuOpen{
-    fontSize: 5rem;
   }
 }
