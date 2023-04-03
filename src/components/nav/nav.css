@@ -187,7 +187,7 @@
     top: 10px; /* adjust as needed */
     right: 0rem; /* adjust as needed */
     /* transform: translate(-100%, 60%); */
-    font-size: 1.8rem;
+    font-size: 2rem;
     cursor: pointer;
   }
 
@@ -228,6 +228,10 @@
     background: hsl(240, 48%, 15%);
   }
   .navbar-logo h3 {
-    font-size: 2.4rem;
+    font-size: 2.2rem;
+    margin-left: 0.2rem;
+  }
+  .menu-icon{
+    margin-right: 0.5rem;
   }
 }

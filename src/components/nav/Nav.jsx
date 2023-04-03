@@ -42,9 +42,9 @@ function Nav() {
           onClick={handleClick}
         >
           {click ? (
-            <ClearIcon className="menuClose" style={{ color: 'white'}} />
+            <ClearIcon className="menuClose" fontSize='large' style={{ color: 'white'}} />
           ) : (
-            <MenuIcon className="menuOpen" style={{ color: 'white' }} />
+            <MenuIcon className="menuOpen" fontSize='large' style={{ color: 'white' }} />
           )}
         </div>
 

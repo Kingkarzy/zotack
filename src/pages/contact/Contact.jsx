@@ -4,9 +4,15 @@ import { MdEmail } from 'react-icons/md';
 import { FaFacebookMessenger } from 'react-icons/fa';
 import { IoLogoWhatsapp } from 'react-icons/io';
 import emailjs from 'emailjs-com';
+import Modal from '@mui/material/Modal';
+import Box from '@mui/material/Box';
+import Typography from '@mui/material/Typography';
+import CheckCircleIcon from '@mui/icons-material/CheckCircle';
 
 const Contact = () => {
   const form = useRef();
+  const [open, setOpen] = React.useState(false);
+  const handleClose = () => setOpen(false);
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -16,6 +22,7 @@ const Contact = () => {
       form.current,
       'wXb5XShz6Pb0fTC2q'
     );
+    setOpen(true);
     e.target.reset();
   };
 
@@ -53,9 +60,9 @@ const Contact = () => {
           <article className='contact__option'>
             <IoLogoWhatsapp className='contact__option-icon' />
             <h4>WhatsApp</h4>
-            <h5>+234 813 643 4416</h5>
+            <h5>234 813 643 4416</h5>
             <a
-              href='https://api.whatsapp.com/send?phone=+2349036980222'
+              href='https://api.whatsapp.com/send?phone=2348136434416'
               target='_blank'
               rel='noopener noreferrer'
             >
@@ -92,6 +99,37 @@ const Contact = () => {
             Send Message
           </button>
         </form>
+        <Modal
+          open={open} 
+          onClose={handleClose} 
+          aria-labelledby='modal-modal-title' 
+          aria-describedby='modal-modal-description'
+        >
+         <Box
+          sx={{
+          position: 'absolute',
+          top: '50%',
+          left: '50%',
+          transform: 'translate(-50%, -50%)',
+          width: 400,
+          backgroundColor: '#d1c4e9',
+          border: '2px solid #000',
+          boxShadow: 24, 
+          textAlign: 'center',
+          color: 'black',
+          fontWeight: 500,
+          p: 4,
+          }}
+         >
+          <Typography 
+            id='modal-modal-description' 
+            sx={{ mt: 2 }}
+          >
+            <CheckCircleIcon color='success' fontSize='large'/>
+            <div>  Message Sent Successfully</div>
+          </Typography>
+         </Box>
+        </Modal>
       </div>
     </section>
   );
