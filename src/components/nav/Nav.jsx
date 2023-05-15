@@ -1,30 +1,14 @@
 import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
-// import { Button } from './Button';
-import { BiMenu } from 'react-icons/bi';
 import MenuIcon from '@mui/icons-material/Menu';
 import ClearIcon from '@mui/icons-material/Clear';
-import { IoMdClose } from 'react-icons/io';
 import './nav.css';
 
 function Nav() {
   const [click, setClick] = useState(false);
-  // const [button, setButton] = useState(true);
 
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
-
-  /* const showButton = () => {
-    if (window.innerWidth <= 960) {
-      setButton(false);
-    } else {
-      setButton(true);
-    }
-  };
-  window.addEventListener('resize', showButton);
-  useEffect(() => {
-    showButton();
-  }, []); */
 
   return (
     <nav className='navbar'>
@@ -42,9 +26,15 @@ function Nav() {
           onClick={handleClick}
         >
           {click ? (
-            <ClearIcon className="menuClose" style={{ color: 'white'}} />
+            <ClearIcon
+              className='menuClose'
+              style={{ color: 'white' }}
+            />
           ) : (
-            <MenuIcon className="menuOpen" style={{ color: 'white' }} />
+            <MenuIcon
+              className='menuOpen'
+              style={{ color: 'white' }}
+            />
           )}
         </div>
 
@@ -62,7 +52,6 @@ function Nav() {
             <NavLink
               to='/About'
               className='nav-links'
-              activeClassName='active'
               onClick={closeMobileMenu}
             >
               About
